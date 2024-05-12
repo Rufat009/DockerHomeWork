@@ -5,11 +5,11 @@ using BooksApi.Services.Base;
 
 namespace BooksApi.Services;
 
-public class BooksService : IBookService
+public class BookService : IBookService
 {
     private readonly IBookRepository mongoBookRepository;
 
-    public BooksService(IBookRepository mongoBookRepository)
+    public BookService(IBookRepository mongoBookRepository)
     {
         this.mongoBookRepository = mongoBookRepository;
     }
